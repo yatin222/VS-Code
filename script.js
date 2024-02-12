@@ -30,6 +30,69 @@ $(".navbar-menu a").click(function(e){
 
 
 
+const splash = document.querySelector(".splash");
+document.addEventListener('DOMContentLoaded',(e)=>{
+    setTimeout(()=>{
+        splash.classList.add('display-none');
+    },2000);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const text = "This is a typewriter effect!"; // Text you want to display
+//     let index = 0;
+  
+//     function type() {
+//       document.getElementById('typewriter-text').textContent += text[index];
+//       index++;
+  
+//       if (index < text.length) {
+//         setTimeout(type, 100); // Adjust typing speed (in milliseconds)
+//       }
+//     }
+  
+//     type();
+//   });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+// const container = document.querySelector('.sliding-text-container');
+// const text = document.querySelector('.sliding-text');
+// const textWidth = text.getBoundingClientRect().width;
+
+// // Set the width of the container to the width of the text content
+// container.style.width = `${textWidth}px`;
+
+// // Reset the animation when it finishes
+// text.addEventListener('animationiteration', () => {
+//     text.style.animation = 'none';
+//     void text.offsetWidth; // Trigger reflow
+//     text.style.animation = 'slide 20s linear infinite'; // Restart animation
+// });
+
+
+
 
 
 
@@ -85,3 +148,76 @@ mobilelink.addEventListener("click",function(){
         mobilelink.classList.remove("active");
     }
 })
+
+
+
+
+// document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+    
+//     // Get form values
+//     var name = document.getElementById('name').value;
+//     var email = document.getElementById('email').value;
+//     var message = document.getElementById('message').value;
+    
+//     // Display confirmation message
+//     var confirmation = document.getElementById('confirmation');
+//     confirmation.innerHTML = '<p>Thank you for your feedback, ' + name + '!</p>';
+//     confirmation.style.display = 'block';
+    
+//     // You can send the feedback data to your server here for further processing
+    
+//     // Reset form fields
+//     document.getElementById('feedbackForm').reset();
+//   });
+
+
+
+// document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevent default form submission behavior
+    
+//     // Get form values
+//     var name = document.getElementById('name').value;
+//     var email = document.getElementById('email').value;
+//     var message = document.getElementById('message').value;
+    
+//     // Display confirmation message
+//     var confirmation = document.getElementById('confirmation');
+//     confirmation.innerHTML = '<p>Thank you for your feedback, ' + name + '!</p>';
+//     confirmation.style.display = 'block';
+    
+//     // Reset form fields
+//     document.getElementById('feedbackForm').reset();
+//     return false;
+//   });
+  
+
+
+// document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+//     console.log("Form submitted"); // Debugging statement
+    
+//     event.preventDefault(); // Prevent default form submission behavior
+    
+//     // Get form values
+//     var name = document.getElementById('name').value;
+//     var email = document.getElementById('email').value;
+//     var message = document.getElementById('message').value;
+    
+//     // console.log("Name:", name); // Debugging statement
+//     // console.log("Email:", email); // Debugging statement
+//     // console.log("Message:", message); // Debugging statement
+    
+//     // Display confirmation message
+//     var confirmation = document.getElementById('confirmation');
+//     confirmation.innerHTML = `<p>Thank you for your feedback, ` + name + `!</p>`;
+//     confirmation.style.display = 'block';
+    
+//     // Reset form fields
+//     document.getElementById('feedbackForm').reset();
+    
+//     // console.log("Confirmation displayed"); // Debugging statement
+    
+//     return false;
+// });
+
+  
