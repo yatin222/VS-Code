@@ -33,6 +33,7 @@ h1{
     z-index: 10;
     color: var(--whitecolor);
     background: transparent;
+    /* align-items: center; */
 }
 .navbar-logo > a{
     letter-spacing: 2.5;
@@ -43,6 +44,8 @@ h1{
     width: 400px;
     display: flex;
     justify-content: space-between;
+    /* bottom: 10px; */
+    /* margin-bottom: 10px; */
 }
 .navbar-menu > a {
     color: var(--whitecolor);
@@ -663,6 +666,22 @@ footer {
     padding: 10px;
     border-radius: 5px;
   }
+  .job-more {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+  }
+  .job-more:hover {
+    background-color: #0056b3;
+  }
+
+  
+
   
 
 

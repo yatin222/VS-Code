@@ -31,12 +31,14 @@
                 <!-- SKILLSCONNECT -->
             </a>
         </h2>
-        <div class="navbar-menu">
+        <div class="navbar-menu">       
+            <!-- <button id="dark-theme-toggle">Dark Theme</button>    -->
             <a href="#jobs">Jobs</a>
             <a href="#companies">Companies</a>
             <a href="#testimoni">Testimonial</a>
             <a href="#blog">Blogs</a>
             <a href="#">Sign In</a>
+           
         </div>
         <div class="menu-toggle">
             <span class="bar"></span>
@@ -343,21 +345,14 @@
                 <a href="#" class="label-c">JavaScript</a>
             </div>
             <div class="job-posted">
-                Posted 1 mins ago
+                Posted 1 mins ago 
             </div>
         </div>
-        <button class="job-more">More List</button>
+        <button class="job-more" onclick="redirectWithTransition('morejobs.html');">
+            More List
+        </button>
 
     </section>
-
-
-
-
-
-
-
-
-
     <!-- abb bnate hai joining sectionn -->
     <section class="join">
         <div class="join-detail">
@@ -365,7 +360,7 @@
                 LETS START YOUR NEW JOB WITH US
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quidem aspernatur qui nemo iure unde blanditiis assumenda nulla. Necessitatibus, quas?</p>
-            <button class="join-button">Join Now</button>
+            <button class="join-button" onclick="redirectWithTransition('interview.html');">Wanna Prep?</button>
         </div>
     </section>
 
@@ -541,7 +536,7 @@
                 <div class="swiper-slide">
                     <i class="fas fa-quote-left"></i>
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe sit Lorem ipsum dolor sit amet. </h3>
-                    <div class="testimoni-pic">
+                   x <div class="testimoni-pic">
                         <img src="images/vishal.jpeg" alt="">
                         <p>Vishal Dakalia</p>
                         <span>Python Expert</span>
@@ -717,13 +712,9 @@
             <a href="">Event</a>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="script.js"></script>
-
-    
+    <script src="script.js"></script>    
 </body>
 </html>
 

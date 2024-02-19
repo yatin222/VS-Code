@@ -147,7 +147,23 @@ mobilelink.addEventListener("click",function(){
         mobile.classList.toggle("is-active");
         mobilelink.classList.remove("active");
     }
-})
+});
+// Add this JavaScript in your script.js file or create a new one
+
+
+
+// document.getElementById("mode").addEventListener("click", function() {
+//     // Toggle dark mode class on the body element
+//     document.body.classList.toggle("dark-mode");
+    
+//     // Toggle the icon based on the current mode
+//     var img = document.getElementById("mode");
+//     if (document.body.classList.contains("dark-mode")) {
+//         img.src = "images/images2/sun.png"; // Change to sun icon when in dark mode
+//     } else {
+//         img.src = "images/images2/moon.png"; // Change to moon icon when in light mode
+//     }
+// });
 
 
 
@@ -219,5 +235,43 @@ mobilelink.addEventListener("click",function(){
     
 //     return false;
 // });
+// document.addEventListener("DOMContentLoaded", function() {
+//     let btn = document.getElementsByTagName("div");
+//     btn.onclick = function() {
+//         console.log("Clicked");
+//         // document.body.classList.toggle("dark-theme");
+//         document.body.setAttribute("style","background-color: black");
+//     }
+// });
+// btnn.onclick = function(){
+    //     // console.log("Clicked");
+    //     document.body.setAttribute("style","background-color: black"); 
+    //     // document.body.style="background-color: black;"
+    // }
+    
+    // document.addEventListener("DOMContentLoaded", function() {
+        //     var modeBtn = document.getElementById("mode");
+        //     modeBtn.addEventListener("click", function() {
+            //         document.body.classList.toggle("dark-theme");
+            //     });
+            // });
+            
+        
+            
 
-  
+            // document.getElementById("mode").onclick = function() {
+            //     var elements = document.getElementsByTagName("*");
+            //     for (var i = 0; i < elements.length; i++) {
+            //       elements[i].style.backgroundColor = "black";
+            //       elements[i].style.color = "white"; // Change text color to white for better visibility
+            //     }
+            //   };
+            // console.log("ki");
+
+            function redirectWithTransition(url) {
+                document.querySelector('.job-more').style.opacity = '0'; // Fade out the button
+                setTimeout(function() {
+                  window.location.href = url;
+                }, 300); // Redirect after 300 milliseconds (adjust this value to your preference)
+              }
+
